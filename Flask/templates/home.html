@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+        body {
+            background-color: #7dacfd; /* Changed background color */
+            font-family: Arial, sans-serif;
+            text-align: center;
+        }
+
+        h1 {
+            color: #333;
+        }
+
+        form {
+            margin: 20px auto; /* Centering the form */
+            padding: 20px;
+            border: 2px solid #333;
+            border-radius: 10px;
+            background-color: #fff;
+            display: inline-block;
+        }
+
+        input[type="text"] {
+            width: 200px;
+            padding: 8px;
+            margin: 5px;
+            box-sizing: border-box;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            text-align: center; /* Centering input values */
+        }
+
+        input[type="submit"] {
+            background-color: #4CAF50;
+            color: white;
+            padding: 12px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        img {
+            margin-top: 20px;
+            max-width: 100%;
+            height: auto;
+            border-radius: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <center>
+
+        <h1>Machine Learning + Flask Project</h1> 
+        <br>
+        <br>
+        <h1  style="color: #ffffff;">IRIS FLOWER DETECTION</h1>
+        
+        <form method="POST" action="{{url_for('home')}}">
+            <b> Sepal Length: <input type="text" name='a' placeholder="Enter sepal length in cm"> <br><br>
+                Sepal Width: <input type="text" name='b' placeholder="Enter sepal width in cm"> <br><br>
+                Petal Length: <input type="text" name='c' placeholder="Enter petal length in cm"> <br><br>
+                Petal Width: <input type="text" name='d' placeholder="Enter petal width in cm"> <br><br><br></b>
+            <input type="submit" value='Predict Output'>
+        </form>
+
+    </center>
+
+</body>
+
+</html>
